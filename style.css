@@ -2,7 +2,8 @@
 .container {
     display:grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1fr 4.5fr;
+    height:100vh;
 }
 
 .sidebar {
@@ -34,3 +35,38 @@
 .sidebar > .third > div {
     margin: 0.5rem;
 }
+
+/* create grid within header */
+
+.header {
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr 1.5fr;
+}
+
+.searchbar {
+    grid-column: 1/3;
+    grid-row:1;
+}
+
+.profile {
+    grid-column: 3;
+    grid-row:1;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:0.5rem;
+}
+
+.status {
+    grid-column: 1/3;
+    grid-row: 2;
+}
+
+.tabs {
+    grid-column: 3;
+    grid-row: 2;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+
