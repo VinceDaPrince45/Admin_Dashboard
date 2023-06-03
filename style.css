@@ -1,7 +1,7 @@
 /* create grid */
 .container {
     display:grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 4.5fr;
     height:100vh;
 }
@@ -69,4 +69,25 @@
     grid-template-columns: repeat(3,1fr);
 }
 
+/* create grid for content */
 
+.content {
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.cards {
+    display:grid;
+    grid-template-rows: 1em auto;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
+
+.title {
+    grid-column: 1/-1;
+    grid-row:1;
+}
+
+.cards > .card {
+    border: 2px solid black;
+    height: 12em;
+}
