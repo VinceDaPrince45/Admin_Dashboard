@@ -91,3 +91,16 @@
     border: 2px solid black;
     height: 12em;
 }
+
+.right-sidebars {
+  display:grid;
+  grid-template-rows:1fr 1fr;
+}
+
+.announcements > .information,
+.trending > .contacts {
+    display:grid;
+    height:100%;
+    grid-template-rows: repeat(auto-fit,1fr);
+}
+
