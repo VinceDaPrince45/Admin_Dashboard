@@ -100,7 +100,14 @@
 .announcements > .information,
 .trending > .contacts {
     display:grid;
-    height:100%;
+    height:90%;
     grid-template-rows: repeat(auto-fit,1fr);
 }
+
+.information > .card,
+.contact {
+    border: 1px solid black;
+}
+
+/* styling */
 
