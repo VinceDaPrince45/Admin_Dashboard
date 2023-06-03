@@ -19,3 +19,18 @@
 .content {
     border:1px solid black;
 }
+
+/* create grid within sidebar */
+
+.sidebar {
+    display:grid;
+    grid-template-rows: auto;
+    align-content: flex-start;
+    gap:2rem;
+}
+
+.first > div,
+.sidebar > .second > div, 
+.sidebar > .third > div {
+    margin: 0.5rem;
+}
