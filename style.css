@@ -163,18 +163,19 @@
 .sidebarcontainer > .information {
     display:grid;
     grid-template-rows: repeat(3,1fr);
+    padding:15px;
+    gap:15px;
 }
 
 .contacts {
     display:grid;
     grid-template-rows: repeat(4,1fr);
+    padding:15px;
+    gap:15px;
 }
 
-.sidebarcontainer {
-    background-color: aqua;
-}
-
-.info:not(:last-child) {
+.info:not(:last-child),
+.contact:not(:last-child)  {
     border-bottom:1px solid black;
 }
 
@@ -242,4 +243,11 @@ input {
 
 .status > .profilepicture img {
     height:3.5em;
+}
+
+/* Right sidebar */
+
+.sidebarcontainer {
+    border-radius: 8px;
+    border:1px solid black
 }
