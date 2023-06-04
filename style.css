@@ -120,3 +120,12 @@
 html {
     font-family: 'Gotham';
 }
+
+img {
+    height:1em;
+}
+
+.sidebar > div > div {
+    display:flex;
+    align-items: center;
+}
