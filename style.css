@@ -22,12 +22,6 @@
     padding-left:3em;
 }
 
-.sidebar,
-.header,
-.content {
-    border:1px solid black;
-}
-
 /* create grid within sidebar */
 
 .sidebar {
@@ -140,12 +134,23 @@
 .middle > .cards > .card {
     height: auto;
     padding:2.5em 1.5em;
+    display:grid;
+    grid-template-rows: 1fr auto;
+    justify-content: space-around;
 }
 
 .right-sidebars {
   display:grid;
   grid-template-rows:1fr 1fr;
   gap:1em;
+}
+
+.actions {
+    justify-self: flex-end;
+}
+
+.actions > img {
+    margin:15px;
 }
 
 .announcements,
@@ -275,14 +280,6 @@ input {
     font-weight:900;
 }
 
-/* Right sidebar */
-
-.sidebarcontainer {
-    border-radius: 8px;
-    border:1px solid black;
-    background-color:rgba(29,29,29,255);
-}
-
 button {
     padding:10px;
     background-color: rgba(187,134,252,255);
@@ -292,15 +289,50 @@ button {
     font-weight: 900;
 }
 
+
+/* Right sidebar */
+
+.sidebarcontainer {
+    border-radius: 8px;
+    background-color:rgba(29,29,29,255);
+}
+
 .profile img {
     height: 1.5em;
+}
+
+.info {
+    padding: 10px 0;
+    font-size:15px;
+}
+
+.info > .title {
+    font-size:20px;
+    font-weight:600;
+    margin-bottom:10px;
+}
+
+.contacts > .contact {
+    display:grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap:12px;
+}
+
+.contact > img {
+    height:2.5em;
+}
+
+.person > .description {
+    font-size:15px;
+    margin-top:5px;
+    color:hsl(210, 10%, 62%;)
 }
 
 /* Content */
 
 .cards > .card {
     border-radius: 8px;
-    border: 1px solid black;
     border-left: 10px solid rgba(187,134,252,255);
     background-color: rgba(29,29,29,255);
 }
@@ -312,4 +344,28 @@ img {
 .content {
     background-color:rgba(18,18,18,255);
     color:white;    
+}
+
+.card > .text > .title {
+    font-size:22px;
+    font-weight:600;
+}
+
+.card > .text > .paragraph {
+    font-size: 18px;
+}
+
+.card > .text {
+    line-height: 1.5em;
+}
+
+.middle > .title,
+.announcements > .title,
+.trending > .title {
+    font-size:24px;
+    font-weight:600;
+}
+
+.actions img {
+    height:1.2em;
 }
