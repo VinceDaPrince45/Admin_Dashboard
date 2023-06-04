@@ -118,18 +118,33 @@
 .right-sidebars {
   display:grid;
   grid-template-rows:1fr 1fr;
+  gap:1em;
 }
 
-.announcements > .information,
-.trending > .contacts {
+.announcements,
+.trending {
     display:grid;
-    height:90%;
-    grid-template-rows: repeat(auto-fit,1fr);
+    grid-template-rows: auto 1fr;
+}
+
+.sidebarcontainer {
+    display:grid;
+    grid-template-rows: 1fr;
+}
+
+.sidebarcontainer > .information {
+    display:grid;
+    grid-template-rows: repeat(3,1fr);
+}
+
+.contacts {
+    display:grid;
+    grid-template-rows: repeat(4,1fr);
 }
 
 .information > .card,
 .contact {
-    border: 1px solid black;
+    border:1px solid black;
 }
 
 /* styling */
