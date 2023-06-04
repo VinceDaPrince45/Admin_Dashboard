@@ -4,15 +4,20 @@
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 4.5fr;
     height:100vh;
+    margin:0;
+    padding:0;
 }
 
 .sidebar {
     grid-column: 1;
     grid-row: 1/-1;
+    padding:1em;
 }
 
 .header {
     grid-row:1;
+    padding:1em;
+    padding-right:3em;
 }
 
 .sidebar,
@@ -40,33 +45,48 @@
 
 .header {
     display:grid;
-    grid-template-columns: repeat(3,1fr);
     grid-template-rows: 1fr 1.5fr;
 }
 
+.firstrow {
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
 .searchbar {
-    grid-column: 1/3;
-    grid-row:1;
+    grid-column:1/span 2;
+    display:flex;
+    padding-right:25%;
+    align-items: center;
+}
+
+.searchbar > input {
+    flex:auto;
+    height: 1em;
 }
 
 .profile {
-    grid-column: 3;
-    grid-row:1;
     display:grid;
     grid-template-columns: repeat(3,1fr);
-    gap:0.5rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.secondrow {
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
 }
 
 .status {
-    grid-column: 1/3;
-    grid-row: 2;
+    display:grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
 }
-
 .tabs {
-    grid-column: 3;
-    grid-row: 2;
     display:grid;
     grid-template-columns: repeat(3,1fr);
+    justify-items:flex-end;
+    align-items: center;
 }
 
 /* create grid for content */
@@ -74,20 +94,23 @@
 .content {
     display:grid;
     grid-template-columns: 3fr 1fr;
+    padding:1em;
+    padding-top:1.5em;
+    gap:1em;
 }
 
 .cards {
     display:grid;
-    grid-template-rows: 1em auto;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap:1.5em;
 }
 
-.title {
-    grid-column: 1/-1;
-    grid-row:1;
+.middle {
+    display:grid;
+    grid-template-rows: 1em auto;
 }
 
-.cards > .card {
+.middle > .cards > .card {
     border: 2px solid black;
     height: 12em;
 }
@@ -128,4 +151,8 @@ img {
 .sidebar > div > div {
     display:flex;
     align-items: center;
+}
+
+body {
+    margin:0;
 }
