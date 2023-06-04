@@ -138,8 +138,8 @@
 }
 
 .middle > .cards > .card {
-    height: 10em;
-    padding:3em 2em;
+    height: auto;
+    padding:2.5em 1.5em;
 }
 
 .right-sidebars {
@@ -234,6 +234,7 @@ body {
     color: rgba(18,18,18,255);
 }
 
+
 /* Header */
 
 input {
@@ -258,6 +259,20 @@ input {
 
 .profile > .profilepicture img {
     height:2em;
+}
+
+.greeting1 {
+    font-size:15px;
+    margin-bottom:10px;
+}
+
+.greeting2 {
+    font-size:26px;
+    font-weight:900;
+}
+
+.profilename {
+    font-weight:900;
 }
 
 /* Right sidebar */
@@ -298,11 +313,3 @@ img {
     background-color:rgba(18,18,18,255);
     color:white;    
 }
-
-/* Colors */
-/* background
-rgba(18,18,18,255)
-card
-rgba(29,29,29,255)
-sidebar 
-rgba(187,134,252,255) */
