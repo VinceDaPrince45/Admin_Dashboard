@@ -137,8 +137,8 @@
 }
 
 .middle > .cards > .card {
-    border: 2px solid black;
-    height: 12em;
+    height: 10em;
+    padding:3em 2em;
 }
 
 .right-sidebars {
@@ -250,4 +250,10 @@ input {
 .sidebarcontainer {
     border-radius: 8px;
     border:1px solid black
+}
+
+.cards > .card {
+    border-radius: 8px;
+    border: 1px solid black;
+    border-left: 10px solid orange;
 }
