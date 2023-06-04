@@ -157,6 +157,7 @@
 .sidebarcontainer {
     display:grid;
     grid-template-rows: 1fr;
+    padding: 0 20px;
 }
 
 .sidebarcontainer > .information {
@@ -169,9 +170,12 @@
     grid-template-rows: repeat(4,1fr);
 }
 
-.information > .card,
-.contact {
-    border:1px solid black;
+.sidebarcontainer {
+    background-color: aqua;
+}
+
+.info:not(:last-child) {
+    border-bottom:1px solid black;
 }
 
 /* styling */
